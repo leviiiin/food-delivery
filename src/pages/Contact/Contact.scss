@@ -1,0 +1,75 @@
+// HERO
+.contact-hero {
+  background: var(--color-red);
+
+  &__content {
+    color: white;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 15px;
+    color: var(--color-orange);
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  &__icon {
+    font-size: 48px;
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__phone {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// MAP
+.contact-info {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  &__address {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__time {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__map {
+    margin-top: 30px;
+    max-width: 1000px;
+    width: 100%;
+    height: 400px;
+    border: 2px solid var(--color-red);
+  }
+
+  &__map-item {
+    width: 100%;
+    height: 100%;
+  }
+}

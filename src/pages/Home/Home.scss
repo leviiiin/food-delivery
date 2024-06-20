@@ -1,0 +1,120 @@
+// HERO
+.h-hero {
+  background-image: url("assets/image/home/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    max-width: 450px;
+    margin-bottom: 50px;
+    color: var(--color-red);
+  }
+
+  &__text {
+    margin-bottom: 80px;
+    max-width: 450px;
+    font-weight: 400;
+  }
+}
+
+// ABOUT
+.h-about {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    max-width: 200px;
+
+    @media (max-width: 768px) {
+      max-width: 40%;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 90%;
+    }
+  }
+
+  &__images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 30px;
+  }
+}
+
+// INGREDIENTS
+.h-ingredients {
+  background: var(--color-red);
+
+  &__content {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    max-width: 450px;
+  }
+
+  &__text {
+    margin: 50px 0;
+  }
+
+  &__img {
+    max-width: 350px;
+
+    @media (max-width: 425px) {
+      max-width: 100%;
+    }
+  }
+}
+
+// INVITE
+.h-invite {
+  background-image: url("assets/image/home/section-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  &__title {
+    color: white;
+  }
+}
+
+main > .h-page {
+  overflow: hidden;
+}

@@ -1,0 +1,19 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 15px 17px;
+
+  color: var(--color-red);
+  font-size: 20px;
+  background: var(--color-orange);
+  border: 2px solid var(--color-red);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--color-orange);
+    background: var(--color-red);
+    border-color: var(--color-orange);
+  }
+}

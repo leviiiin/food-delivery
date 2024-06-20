@@ -1,0 +1,154 @@
+// HERO
+.about-hero {
+  background-image: url("assets/image/about/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    padding: 100px 0;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__title {
+    color: var(--color-orange);
+  }
+
+  &__text {
+    margin-top: 50px;
+    color: white;
+    line-height: 1.2;
+  }
+}
+
+// INFO
+.about-info {
+  padding-bottom: 0;
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 70px;
+    }
+  }
+
+  &__item {
+    padding-top: 100px;
+    max-width: 250px;
+
+    @media (max-width: 768px) {
+      padding: 0;
+      max-width: 400px;
+    }
+  }
+
+  &__item-title {
+    color: var(--color-orange);
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__item-text {
+    margin-top: 40px;
+
+    @media (max-width: 768px) {
+      margin-top: 15px;
+      letter-spacing: 1.3px;
+      text-align: justify;
+    }
+  }
+
+  &__img {
+    max-width: 390px;
+
+    @media (max-width: 768px) {
+      max-width: 250px;
+    }
+  }
+}
+
+// ORDER
+.about-order {
+  padding: 0;
+  background-image: url("assets/image/about/pizzeria-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__glass-bg {
+    padding: 250px 0;
+    background: rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 768px) {
+      padding: 150px 0;
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    color: white;
+    padding-bottom: 50px;
+  }
+}
+
+// Welcome
+.about-welcome {
+  background: var(--color-orange);
+
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+  
+    @media (max-width:768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 80px;
+    }
+  }
+
+  &__info {
+    max-width: 400px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    max-width: 380px;
+
+    @media (max-width:425px) {
+      max-width: 100%;
+    }
+  }
+}
+
+main > .about-page {
+  overflow: hidden;
+}
+

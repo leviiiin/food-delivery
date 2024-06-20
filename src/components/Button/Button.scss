@@ -1,0 +1,70 @@
+button,
+.button {
+  padding: 12px 16px;
+  border-radius: 32px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+
+  &--big {
+    font-size: 22px;
+    padding: 18px 32px;
+  }
+
+  &--primary {
+    background: var(--color-red);
+    color: white;
+
+    &:hover {
+      color: var(--color-black);
+      background: var(--color-gray);
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: var(--color-red);
+
+    &:hover {
+      background: var(--color-gray);
+    }
+  }
+
+  &--ghost-red {
+    background: transparent;
+    border-color: var(--color-red);
+    color: var(--color-red);
+
+
+    &:hover {
+      color: white;
+      background: var(--color-red);
+    }
+  }
+
+  &--ghost-white {
+    background: transparent;
+    border-color: white;
+    color: white;
+
+    &:hover {
+      color: var(--color-red);
+      background: white;
+    }
+  }
+
+  &--ghost-orange {
+    background: transparent;
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+
+
+    &:hover {
+      color: var(--color-black);
+      background: var(--color-orange);
+    }
+  }
+
+}

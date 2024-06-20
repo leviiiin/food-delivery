@@ -1,0 +1,108 @@
+.header {
+  padding: 20px 0;
+
+  &__logo {
+    width: 160px;
+    height: 30px;
+    position: relative;
+    z-index: 3;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__content,
+  &__nav,
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    justify-content: space-between;
+  }
+
+  &__nav {
+    gap: 30px;
+  }
+
+  &__menu {
+    gap: 30px;
+  }
+
+  &__menu-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-black);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      color: var(--color-red);
+    }
+
+    &.active {
+      border-color: var(--color-red);
+
+      &:hover {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &__humburger {
+    border: 1px solid var(--color-gray) !important;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__humburger-icon {
+    font-size: 38px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  background-color: white;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__link {
+    color: var(--color-black);
+    font-size: 32px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+
+    &.active {
+      border-color: var(--color-red);
+    }
+  }
+
+  &__btn {
+    font-size: 24px !important;
+    padding: 15px 40px !important;
+  }
+
+  &.open {
+    display: flex;
+  }
+}
