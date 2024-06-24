@@ -1,0 +1,99 @@
+// HERO
+.menu-hero {
+  background-image: url("assets/image/about/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    padding: 100px 0;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 50px 0;
+    }
+  }
+
+  &__title {
+    color: var(--color-orange);
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 650px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+}
+
+// MENU
+.menu {
+  &__content {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__left {
+    width: 70%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__aside {
+    max-width: 30%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  &__products-section {
+    margin-top: 50px;
+  }
+
+  &__products-title {
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    font-family: "Sora";
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  &__products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.scroll-to-cart {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--color-red);
+  color: var(--color-orange);
+  border: none;
+  padding: 15px 18px;
+  border-radius: 50px;
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  &__icon {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "categories": [
+    {
+      "name": "appetizers",
+      "products": [
+        {
+          "name": "Mozzarella Sticks",
+          "price": 5.99,
+          "image": "assets/image/products/appetizers/mozzarella-sticks.webp",
+          "tags": ["vegetarian"]
+        },
+        {
+          "name": "Garlic Bread",
+          "price": 3.99,
+          "image": "assets/image/products/appetizers/Garlic-Bread.webp"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": 6.99,
+          "image": "assets/image/products/appetizers/Chicken-Wings.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Main courses",
+      "products": [
+        {
+          "name": "Grilled Salmon",
+          "price": 15.99,
+          "image": "assets/image/products/main-courses/grill-salmon.jpg"
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "price": 12.99,
+          "image": "assets/image/products/main-courses/spaghetti-bolognese.jpg"
+        },
+        {
+          "name": "Vegetable Stir Fry",
+          "price": 11.99,
+          "image": "assets/image/products/main-courses/stir-fry.jpg",
+          "tags": ["vegetarian", "new"]
+        }
+      ]
+    },
+    {
+      "name": "pizza",
+      "products": [
+        {
+          "name": "Margherita",
+          "price": 8.99,
+          "image": "assets/image/products/pizza/margherita.jpg",
+          "tags": ["vegetarian"]
+        },
+        {
+          "name": "Pepperoni",
+          "price": 9.99,
+          "image": "assets/image/products/pizza/pepperoni.jpeg"
+        },
+        {
+          "name": "BBQ Chicken",
+          "price": 10.99,
+          "image": "assets/image/products/pizza/bbq-chicken.jpg",
+          "tags": ["new"]
+        }
+      ]
+    },
+    {
+      "name": "desserts",
+      "products": [
+        {
+          "name": "Cheesecake",
+          "price": 4.99,
+          "image": "assets/image/products/desserts/cheesecake.jpg"
+        },
+        {
+          "name": "Brownie",
+          "price": 3.99,
+          "image": "assets/image/products/desserts/brownie.jpg",
+          "tags": ["new"]
+        },
+        {
+          "name": "Ice Cream",
+          "price": 2.99,
+          "image": "assets/image/products/desserts/ice-cream.jpg",
+          "tags": ["vegetarian"]
+        }
+      ]
+    },
+    {
+      "name": "drinks",
+      "products": [
+        {
+          "name": "Coca Cola",
+          "price": 1.99,
+          "image": "assets/image/products/drinks/cola.webp"
+        },
+        {
+          "name": "Orange Juice",
+          "price": 2.99,
+          "image": "assets/image/products/drinks/orange-juice.jpg",
+          "tags": ["new"]
+        },
+        {
+          "name": "Lemonade",
+          "price": 2.49,
+          "image": "assets/image/products/drinks/Lemonade.webp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.menu-nav {
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background: white;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    background: var(--color-red-light);
+    text-transform: capitalize;
+    white-space: nowrap;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: var(--color-red);
+    }
+
+    &.active {
+      background: var(--color-red);
+      color: white;
+    }
+  }
+}

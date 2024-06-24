@@ -1,0 +1,97 @@
+.cart {
+  padding: 15px;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__btn {
+    margin-top: 15px;
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__btn-icon {
+    font-size: 20px;
+  }
+
+  &__empty {
+    padding-bottom: 30px;
+    color: rgb(149, 149, 149);
+    text-align: center;
+  }
+
+  &__empty-icon {
+    font-size: 100px;
+  }
+
+  &__empty-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  &__total-price {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total-price-item {
+    font-family: "Sora";
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.cart__item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 14px;
+  border: {
+    top: 1px solid var(--color-gray);
+    bottom: 1px solid var(--color-gray);
+  }
+
+  &-name {
+  }
+
+  &-counter {
+  }
+
+  &-price {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  &-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+
+    &:hover {
+      background: black;
+      color: white;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}

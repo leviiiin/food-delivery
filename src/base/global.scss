@@ -9,6 +9,8 @@
   --color-orange: #febe10;
   --color-green: #008000;
   --color-gray: #eee;
+  --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --border-radius: 30px;
 }
 
 body {
@@ -34,8 +36,14 @@ section {
   padding: 0 15px;
 }
 
-.font-sora{
-  font-family: 'Sora';
+.font-sora {
+  font-family: "Sora";
+}
+
+.sticky {
+  position: sticky;
+  top: 15px;
+  z-index: 1000;
 }
 
 h1,
@@ -75,7 +83,8 @@ h5,
   font-size: 20px;
 }
 
-p, .p {
+p,
+.p {
   font-weight: 300;
   line-height: 1.4;
 }
@@ -108,7 +117,7 @@ p, .p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-red); 
+  background-color: var(--color-red);
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;
