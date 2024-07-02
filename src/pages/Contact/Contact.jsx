@@ -1,5 +1,6 @@
 import "./Contact.scss";
 
+// TODO: Don`t understand why you are using this component. You can use the iframe tag directly in the Contact component.
 const Iframe = ({
   src,
   allowFullScreen,

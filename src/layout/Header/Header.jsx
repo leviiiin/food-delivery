@@ -13,6 +13,7 @@ const Header = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
+    // TODO: It`s okey, but better solution create useScreen hook, what return device type
     window.addEventListener("resize", handleResize);
 
     return () => {

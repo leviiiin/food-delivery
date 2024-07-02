@@ -19,6 +19,8 @@ const ScrollToTopButton = () => {
     });
   };
 
+  // TODO: It`s okey, but better solution create useScroll hook
+  // or useScrollTo hook
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
     return () => {

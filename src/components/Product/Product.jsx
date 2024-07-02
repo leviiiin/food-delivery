@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import "./Product.scss";
 
 const Product = ({ product, addToCart, items }) => {
+  //TODO: You should use props for this data, pass all items it's looks like a bad practice
   const itemInCart = items.find((item) => item.name === product.name);
   const quantity = itemInCart ? itemInCart.quantity : 0;
 
@@ -14,6 +15,7 @@ const Product = ({ product, addToCart, items }) => {
           {product.tags && (
             <div className="product__tags">
               {product.tags.map((tag) => (
+                  /* TODO: Why you use tag in className? */
                 <span key={tag} className={`product__tag ${tag}`}>
                   {tag}
                 </span>
@@ -22,6 +24,7 @@ const Product = ({ product, addToCart, items }) => {
           )}
         </div>
         <div className="product__bottom">
+          {/* TODO: Check what price is not a null */}
           <p className="product__price">${product.price.toFixed(2)}</p>
           <Button
             className="button--primary product__btn"

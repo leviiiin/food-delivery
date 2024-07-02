@@ -1,5 +1,5 @@
 import "./base/index.scss";
-import "./scripts/aos";
+import "./scripts/aos"; // TODO: You have AOS in your package.json, but you're importing it from the scripts folder. You should import it from the package.
 import { Route, Routes } from "react-router-dom";
 import { Home, About, Contact, Menu } from "./pages/index";
 import Header from "./layout/Header/Header";
