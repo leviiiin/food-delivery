@@ -1,9 +1,15 @@
 import Button from "../Button/Button";
+import Tag from "../Tag/Tag";
 import "./Product.scss";
 
-const Product = ({ product, addToCart, items }) => {
+const Product = (props) => {
+  const { product, addToCart, items } = props;
   const itemInCart = items.find((item) => item.name === product.name);
   const quantity = itemInCart ? itemInCart.quantity : 0;
+
+  if (product.price === 0) {
+    return null;
+  }
 
   return (
     <div key={product.name} className="product">
@@ -13,10 +19,10 @@ const Product = ({ product, addToCart, items }) => {
           <p className="product__name">{product.name}</p>
           {product.tags && (
             <div className="product__tags">
-              {product.tags.map((tag) => (
-                <span key={tag} className={`product__tag ${tag}`}>
+              {product.tags && product.tags.map((tag) => (
+                <Tag key={tag}>
                   {tag}
-                </span>
+                </Tag>
               ))}
             </div>
           )}
@@ -28,7 +34,9 @@ const Product = ({ product, addToCart, items }) => {
             onClick={() => addToCart(product)}
           >
             Order
-            {quantity > 0 && <div className="product__btn-quantity">{quantity}</div>}
+            {quantity > 0 && (
+              <div className="product__btn-quantity">{quantity}</div>
+            )}
           </Button>
         </div>
       </div>

@@ -75,25 +75,3 @@
     gap: 30px;
   }
 }
-
-.scroll-to-cart {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background-color: var(--color-red);
-  color: var(--color-orange);
-  border: none;
-  padding: 15px 18px;
-  border-radius: 50px;
-  display: none;
-  z-index: 1000;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-
-  &__icon {
-    font-size: 24px;
-  }
-}
