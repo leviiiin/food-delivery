@@ -16,10 +16,10 @@ function App() {
       <Header />
       <main role="main">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/food-delivery/" element={<Home />} />
+          <Route path="/food-delivery/about" element={<About />} />
+          <Route path="/food-delivery/contact" element={<Contact />} />
+          <Route path="/food-delivery/menu" element={<Menu />} />
         </Routes>
       </main>
       <Footer />

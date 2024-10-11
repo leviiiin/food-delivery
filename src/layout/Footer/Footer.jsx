@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__content">
-          <Link to="/">
+          <Link to="/food-delivery/">
             <img
               className="footer__logo"
               src="assets/image/logo-white.png"
@@ -14,16 +14,16 @@ const Footer = () => {
             />
           </Link>
           <div className="footer__nav">
-            <Link to="/" className="footer__nav-link">
+            <Link to="/food-delivery/" className="footer__nav-link">
               Home
             </Link>
-            <Link to="/about" className="footer__nav-link">
+            <Link to="/food-delivery/about" className="footer__nav-link">
               About us
             </Link>
-            <Link to="/contact" className="footer__nav-link">
+            <Link to="/food-delivery/contact" className="footer__nav-link">
               Contact
             </Link>
-            <Link to="/menu" className="footer__nav-link">
+            <Link to="/food-delivery/menu" className="footer__nav-link">
               Order online
             </Link>
           </div>
