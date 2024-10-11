@@ -22,27 +22,30 @@ const Header = () => {
       <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="mobile-menu__list">
           <NavLink
-            to="/"
+            to="/food-delivery/"
             className="mobile-menu__link"
             activeclassname="active"
           >
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/food-delivery/about"
             className="mobile-menu__link"
             activeclassname="active"
           >
             About us
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/food-delivery/contact"
             className="mobile-menu__link"
             activeclassname="active"
           >
             Contact
           </NavLink>
-          <Link to="/menu" className="button button--primary mobile-menu__btn">
+          <Link
+            to="/food-delivery/menu"
+            className="button button--primary mobile-menu__btn"
+          >
             Order online
           </Link>
         </div>
@@ -54,7 +57,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <Link to="/">
+          <Link to="/food-delivery/">
             <img
               className="header__logo"
               src="assets/image/logo.png"
@@ -79,7 +82,7 @@ const Header = () => {
               <ul className="header__menu">
                 <li>
                   <NavLink
-                    to="/"
+                    to="/food-delivery/"
                     className="header__menu-link"
                     activeclassname="active"
                   >
@@ -88,7 +91,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/about"
+                    to="/food-delivery/about"
                     className="header__menu-link"
                     activeclassname="active"
                   >
@@ -97,7 +100,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/contact"
+                    to="/food-delivery/contact"
                     className="header__menu-link"
                     activeclassname="active"
                   >
@@ -105,10 +108,10 @@ const Header = () => {
                   </NavLink>
                 </li>
               </ul>
-              <Link to="/menu" className="button button--primary">
+              <Link to="/food-delivery/menu" className="button button--primary">
                 Order online
               </Link>
-              <Link to="/user" className="button button--ghost">
+              <Link to="/food-delivery/user" className="button button--ghost">
                 <img src="assets/icon/user.svg" alt="user" />
               </Link>
             </nav>
