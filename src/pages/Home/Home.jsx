@@ -25,7 +25,10 @@ const Home = () => {
               your door!
             </p>
             <div data-aos="fade-up-left" data-aos-duration="1100">
-              <Link to="/menu" className="button button--ghost-red button--big">
+              <Link
+                to="/food-delivery/menu"
+                className="button button--ghost-red button--big"
+              >
                 Order online
               </Link>
             </div>
@@ -85,7 +88,7 @@ const Home = () => {
                 products.
               </p>
               <Link
-                to="/menu"
+                to="/food-delivery/menu"
                 className="button button--ghost-white button--big"
               >
                 Order online
@@ -105,7 +108,11 @@ const Home = () => {
       <section className="h-invite">
         <div className="container">
           <div className="h-invite__content">
-            <h2 className="h2 h-invite__title"  data-aos="zoom-in" data-aos-duration="1100">
+            <h2
+              className="h2 h-invite__title"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+            >
               We invite you to EXPRESS PIZZA ITALY!
             </h2>
           </div>

@@ -76,7 +76,7 @@ const About = () => {
               </p>
               <div data-aos="fade-up" data-aos-duration="900">
                 <Link
-                  to="/menu"
+                  to="/food-delivery/menu"
                   className="button button--big button--ghost-orange"
                 >
                   Order online
@@ -110,7 +110,10 @@ const About = () => {
                 By creating EXPRESS PIZZA ITALY we want you to have a similar
                 experience.
               </p>
-              <Link to="/menu" className="button button--big button--primary">
+              <Link
+                to="/food-delivery/menu"
+                className="button button--big button--primary"
+              >
                 Order with delivery
               </Link>
             </div>
