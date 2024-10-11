@@ -1,25 +1,13 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
+import useScreen from "../../hooks/useScreen";
 import "./Header.scss";
 import "../../components/Button/Button";
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const deviceType = useScreen();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // TODO: It`s okey, but better solution create useScreen hook, what return device type
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -73,7 +61,7 @@ const Header = () => {
               alt="Logo"
             />
           </Link>
-          {isMobile ? (
+          {deviceType === "mobile" ? (
             <div className="header__mobile-nav">
               <button
                 className="button button--ghost header__humburger"
@@ -125,7 +113,7 @@ const Header = () => {
               </Link>
             </nav>
           )}
-          {mobileMenu}
+          {deviceType === "mobile" && mobileMenu}
         </div>
       </div>
     </header>

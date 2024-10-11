@@ -20,10 +20,10 @@ const Footer = () => {
             <Link to="/about" className="footer__nav-link">
               About us
             </Link>
-            <Link to="/" className="footer__nav-link">
+            <Link to="/contact" className="footer__nav-link">
               Contact
             </Link>
-            <Link to="/" className="footer__nav-link">
+            <Link to="/menu" className="footer__nav-link">
               Order online
             </Link>
           </div>

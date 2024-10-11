@@ -1,16 +1,8 @@
-import { useState, useEffect } from "react";
+import useScroll from "../../hooks/useScroll";
 import "./ScrollToTop.scss";
 
 const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+  const isVisible = useScroll();
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -18,15 +10,6 @@ const ScrollToTopButton = () => {
       behavior: "smooth",
     });
   };
-
-  // TODO: It`s okey, but better solution create useScroll hook
-  // or useScrollTo hook
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
-  }, []);
 
   return (
     <>
