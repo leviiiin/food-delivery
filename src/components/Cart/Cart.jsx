@@ -1,7 +1,8 @@
 import Button from "../Button/Button";
 import "./Cart.scss";
 
-const Cart = ({ items, addToCart, removeFromCart, total, onCheckout }) => {
+const Cart = (props) => {
+  const { items, addToCart, removeFromCart, total, onCheckout } = props;
   return (
     <div className="cart">
       <p className="cart__title">Your order</p>

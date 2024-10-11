@@ -24,6 +24,7 @@ const Menu = () => {
 
     setCategories(productsData.categories);
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -128,9 +129,6 @@ const Menu = () => {
             </aside>
           </div>
         </div>
-        <button className="scroll-to-cart" onClick={handleCheckout}>
-          Go to Cart
-        </button>
       </section>
       {isOrderModalOpen && (
         <OrderModal
